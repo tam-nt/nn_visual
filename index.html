@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<script src = "http://d3js.org/d3.v3.min.js"></script>
+		<title> Global Ocean Circulation </title>
+		
+		<style>
+			body {
+				font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+				display: block;
+				margin: 8px;
+			}
+			h1 {
+				font-size: 16px;
+				color: #333;
+				background-color: #DDD;
+				border-bottom: 1px #999 solid;
+				text-align: center;
+			}
+			#wrap {
+				width = 800px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div id = "wrap">
+		<h2 style = "text-align: center;"> Description </h2>
+		
+		<p> Ocean circulation is defined as horizontal movement of water in the ocean, which can be generated and influenced by winds, density gradient and the earth’s rotation. On the global scale, ocean circulation is a key to transport enormous amount of heat and regulates climate. To have an overview of global circulation systems, Ocean Surface Current Analysis Real-time (<a href = "http://podaac.jpl.nasa.gov/">OSCAR</a>) data is selected with 1 x 1 degree latitude/longitude resolution 
+		The OSCAR data is available with 5- day resolution from October 1992 to present, and a sample of 5 recent years is focused here. The horizontal near-surface velocity (15m depth) is estimated from sea surface height, surface vector wind and sea surface temperature, collected from different satellites and in situ observations by Earth Space Center (<a href = "http://www.esr.org/oscar_index.html">ESR</a>).
+		</p>
+ 		<p> Moreover, to understand important characteristics of seawater around the globe, especially in the major current systems, 1/4° Optimum Interpolation Sea Surface Temperature ( <a href = "http://www.ncdc.noaa.gov/oisst/data-access">OISST</a>) data is chosen. This satellite data is derived from the Advanced Very High Resolution Radiometer (AVHRR) and a sample is extracted in the same time periods as the OSCAR current data. This satellite data is derived from the Advanced Very High Resolution Radiometer (AVHRR) and a sample is extracted in the same time periods as the OSCAR current data. </p>
+		</div>
+		
+		<canvas id = "globegraph">
+		</canvas>
+			
+		
+		
+	</body>
+</html>
